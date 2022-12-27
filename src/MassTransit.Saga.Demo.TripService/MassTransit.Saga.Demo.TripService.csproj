@@ -13,7 +13,7 @@
   <ItemGroup>
     <PackageReference Include="CSharpFunctionalExtensions" Version="2.27.0" />
     <PackageReference Include="masstransit" Version="7.3.0" />
-    <PackageReference Include="MassTransit.Analyzers" Version="7.3.0" />
+    <PackageReference Include="MassTransit.Analyzers" Version="7.3.1" />
     <PackageReference Include="masstransit.extensions.dependencyinjection" Version="7.3.0" />
     <PackageReference Include="MassTransit.EntityFrameworkCore" Version="7.3.0" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="7.3.0" />
