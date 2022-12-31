@@ -25,7 +25,6 @@ public static class ConfigureEventBusExtensions
                 .EntityFrameworkRepository(r =>
                 {
                     r.UseSqlServer();
-                    r.LockStatementProvider = new LockStatementProvider();
                     r.ConcurrencyMode = ConcurrencyMode.Pessimistic;
                     r.AddDbContext<DbContext, TripDbContext>((provider, builder) =>
                     {
@@ -52,7 +51,5 @@ public static class ConfigureEventBusExtensions
                 configurator.UseEntityFrameworkCoreAuditStore(builder, "Audit");
             });
         });
-
-        services.AddMassTransitHostedService();
     }
 }
