@@ -45,13 +45,8 @@ jobs:
         env:
           SemVer: ${{ steps.gitversion.outputs.semVer }}
         run: |
-          dotnet --version
           dotnet build ./MassTransit.Saga.Demo.sln --configuration Release --no-restore
 
       - name: Test .NET solution
         run: |
-          dotnet --version
-          dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover ./MassTransit.Saga.Demo.sln --configuration Release --no-restore
-
-      - name: CodeCov
-        uses: codecov/codecov-action@v3
+          dotnet test ./MassTransit.Saga.Demo.sln --configuration Release --no-restore /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
