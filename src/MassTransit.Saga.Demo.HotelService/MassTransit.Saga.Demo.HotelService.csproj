@@ -9,7 +9,7 @@
   </PropertyGroup>
 
 	<ItemGroup>
-    <PackageReference Include="masstransit" Version="8.0.10" />
+    <PackageReference Include="masstransit" Version="8.5.10" />
     <PackageReference Include="MassTransit.Analyzers" Version="8.0.10" />
     <PackageReference Include="masstransit.extensions.dependencyinjection" Version="7.3.1" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.10" />
